@@ -13,15 +13,15 @@
 // app.use(cors());
 // app.listen(PORT, console.log("http://localhost:4000/"));
 
-const http = require('http');
+const http = require("http");
 const port = 4000;
 
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Welcome to Node.js!\n');
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Welcome to Node.js!\n");
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+server.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
 });
