@@ -14,7 +14,7 @@
 // app.listen(PORT, console.log("http://localhost:4000/"));
 
 const http = require('http');
-const hostname = '192.168.1.11';
+const hostname = '127.0.0.1';
 const port = 4000;
 
 const server = http.createServer((req, res) => {
